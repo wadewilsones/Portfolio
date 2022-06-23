@@ -257,21 +257,15 @@
 
 /*TABLET*/
 
-@media screen and (max-width:1199px){
+@media screen and (min-width: 600px) and (max-width:1199px){
 
-
-    body{
-        display: grid;
-        grid-template-columns: 95% 5%;
-        grid-template-rows: 10% 90%;
-    }
 
     /*TABLET HEADER*/
 
     header{
         display: flex;
         justify-content: flex-end;
-        width:1100px;
+        width:90%;
         margin: 2em auto;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -283,7 +277,7 @@
     header a{
         display: block;
         padding: 0 10px ;
-        font-size:1.2em;
+        font-size:1em;
         color:black;
         text-transform: uppercase;
         text-decoration: none;
@@ -299,7 +293,7 @@
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:2;
-        width:100%;
+        width:90%;
         margin: auto;
    
     }
@@ -322,12 +316,12 @@
         content: '';
         border:2px solid rgb(29, 29, 29);
         display: block;
-        max-width:1150px;
+        max-width:90%;
         margin: auto;
     }
 
     #portfolio_heading h1{
-        font-size: 7em;
+        font-size: 5em;
         text-transform: uppercase;
         font-weight: 400;
     }
@@ -336,12 +330,12 @@
 
         #projects{
 
-            max-width:1100px;
+            max-width:90%;
             margin: 2em auto;
             display: grid;
             grid-template-columns: repeat(3, 33.3%);
             grid-template-rows: repeat(4, 22.5%);
-            height: 60vh;
+            height: 40vh;
             grid-gap: 20px;
         }
 
@@ -442,52 +436,217 @@
         /*TABLET FOOTER*/
 
         footer i{
-            font-size:36px;
+            font-size:48px;
             display: block;
             margin: 0.5em auto 0;
-            width:90%;
-            text-align: center;
-            cursor: pointer;
+            padding: 1em 0.3em;
 
+        }
+
+        footer a{
+            color: rgb(33, 31, 31);
         }
 
         footer{
 
-            grid-column-start: 2;
-            grid-row-start:2;
-            max-width:60px;
-            flex-wrap: wrap;
-            max-height: 60vh;
+            margin-top: 4em;
+            display: flex;
             align-self: center;
-            position: relative;
+            justify-content: center;
+
         }
 
-        footer:before{
-            content: '';
-            width: 0;
-            height: 200px;
-            position: absolute;
-            bottom:100%;
+
+}
+
+
+/*SMARTPHONE*/
+
+@media screen and (min-width: 320px) and (max-width:599px){
+
+
+
+    /*SMARTPHONE HEADER*/
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    header a{
+        display: block;
+        padding: 0 10px ;
+        font-size:0.9em;
+        color:black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    /*SMARTPHONE MAIN*/
+
+    main{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        width:90%;
+        margin: auto;
+   
+    }
+
+    #portfolio_heading{
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    #portfolio_heading h5{
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 1em;
+    }
+
+    #portfolio_heading h1:before,
+    #portfolio_heading h1:after
+    {
+        content: '';
+        border:2px solid rgb(29, 29, 29);
+        display: block;
+        max-width:90%;
+        margin: auto;
+    }
+
+    #portfolio_heading h1{
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+        /*SMARTPHONE PROJECT*/
+
+        #projects{
+
+            max-width:100%;
+            display: flex;
             margin: 2em auto;
-            left: 0;
-            right: 0;
-            border: 2px solid black;
+            overflow: scroll;
+            align-items: center;
         }
-        footer:after
-        {
-            content: '';
-            width: 0;
-            height: 200px;
-            position: absolute;
-            top:100%;
-            margin: 2em auto;
-            left: 0;
-            right: 0;
-            border: 2px solid black;
+
+        #projects::-webkit-scrollbar{
+            display: none;
+        }
+
+        #projects > div{
+            height: 50vh;
+            min-width:85vw;
+            margin: 0 0.2em;
+
+        }
+
+        #mood{
+        
+            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
             
-    
         }
 
+        #mood a,
+        #to-do a,
+        #travel a,
+        #food-order a,
+        #weather a
+        {
+            color:white;
+            text-transform: uppercase;
+            margin: 2em 1em;
+        }
+
+        #mood:hover,
+        #to-do:hover,
+        #travel:hover,
+        #food-order:hover,
+        #weather:hover
+        {
+            transition: 0.5s;
+            transform: scale(1.02);
+            text-decoration: underline;
+        }
+
+
+        #to-do{
+ 
+            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #travel{
+       
+            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        
+        #food-order{
+           
+            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #weather{
+          
+            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        /*SMARTPHONE FOOTER*/
+
+        footer i{
+            font-size:42px;
+            display: block;
+            padding: 1em 0.4em;
+
+        }
+
+        footer a{
+            color: rgb(33, 31, 31);
+        }
+
+        main:after{
+            content: 'Swipe Right to see more works';
+            text-align: center;
+            width:100%;
+            display: block;
+            margin: auto;
+            text-transform: uppercase;
+        }
+        footer{
+
+            display: flex;
+            align-self: center;
+            justify-content: center;
+
+        }
 
 
 }
