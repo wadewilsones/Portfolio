@@ -363,6 +363,7 @@
    /*TABLET PROJECT*/
     #projects{
         max-width:90%;
+        max-height: 60vh;
         margin: 2em auto;
         display: grid;
         grid-template-columns: repeat(3, 33.3%);
@@ -373,6 +374,8 @@
     #projects > div{
         width: 100%;
    }
+
+
     #mood{
         grid-row-start: 1;
         grid-row-end: 5;
@@ -389,10 +392,40 @@
         text-transform: uppercase;
         margin: 2em 1em;
    }
-    #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
-        transition: 0.5s;
-        transform: scale(1.02);
-   }
+   #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    padding: 50px;
+}
+
+#food-order:hover{
+height: 310%;
+padding: 20px;
+transition: 0.5s;
+}
+
+
+#to-do:hover{
+    height: 210%;
+    padding: 20px;
+    transition: 0.5s;
+}
+    
+
+
+#travel:hover{
+        height: 120%;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+
+.projects-info p{
+    height: 100%;
+    margin: auto;
+    color:white;
+    line-height: 2;
+}
 
     #to-do{
         background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
@@ -615,11 +648,21 @@
         color:white;
         text-transform: uppercase;
         margin: 2em 1em;
+
    }
+
+   .projects-info p{
+    height: 100%;
+    margin: auto;
+    color:white;
+    text-decoration: none;
+    line-height: 2;
+}
+
     #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
         transition: 0.5s;
         transform: scale(1.02);
-        text-decoration: underline;
+        padding: 20px;
    }
     #to-do{
         background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
