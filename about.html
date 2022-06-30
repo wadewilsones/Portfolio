@@ -10,34 +10,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <title>V-Portfolio</title>
+    <title>About Me</title>
 </head>
 <body>
     <header>
         <a href="./about.html">About</a>
         <a href="./index.html">Portfolio</a>
     </header>
-    <main>
-        <section id = "portfolio_heading">
-            <h5>Ulada Haranina</h5>
-            <h1>portfolio</h1>
-        </section>
-        <section id = "projects">
-            <div id = 'mood' onClick = "window.location='https://mood-tracker-application.herokuapp.com/login'">
-                <a href="https://mood-tracker-application.herokuapp.com/login" >Mood Application</a>
+    <main id = 'about-page'>
+        <section id = 'container' class="mouseOut"></section>
+        <section id = 'skills'>
+            <h2>Skills and tools</h2>
+            <div>
+                <h4>Front-end</h4>
+                <ul>
+                    <li><img src="./media/icons/js.svg">JS</li>
+                    <li><img src="./media/icons/html.svg">HTML5</li>
+                    <li><img src="./media/icons/css.svg">CSS3</li>
+                    <li><img src="./media/icons/react.svg">React.JS</li>
+                </ul>
             </div>
-            <div id = 'to-do' onClick = "window.location='https://wadewilsones.github.io/toDo-app/'">
-                <a href="https://wadewilsones.github.io/toDo-app/">To Do Application</a>
+
+            <div>
+                <h4>Back-end</h4>
+                <ul>
+                    <li><img src="./media/icons/node.svg">NODE.js</li>
+                    <li><img src="./media/icons/express.svg">EXPRESS.js</li>
+                    <li><img src="./media/icons/sql.svg">SQL</li>
+                    <li><img src="./media/icons/python.svg">PYTHON</li>
+                </ul>
             </div>
-            <div id = 'food-order' onClick = "window.location='https://wadewilsones.github.io/restaurant-app/'">
-                <a href="https://wadewilsones.github.io/restaurant-app/">Restuarant App</a>
-            </div>
-            <div id = 'travel'>
-                <a>Travel Application</a>
-            </div>
-            <div id = 'weather'>
-                <a>Weather Application</a>
-            </div>
+
+            <a href="./media/haranina_resume.pdf" target="_blank">Downolad resume</a>
         </section>
     </main>
     <footer>
