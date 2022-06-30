@@ -4,21 +4,14 @@
     border:0;
     font-family: Montserrat, Helvetica, sans-serif;
 }
-
-
 /*DESKTOP*/
-
 @media screen and (min-width:1300px){
-
-
     body{
         display: grid;
         grid-template-columns: 95% 5%;
         grid-template-rows: 10% 90%;
-    }
-
-    /*DESKTOP HEADER*/
-
+   }
+   /*DESKTOP HEADER*/
     header{
         display: flex;
         justify-content: flex-end;
@@ -28,9 +21,7 @@
         grid-column-end: 3;
         grid-row-start:1;
         grid-row-end:2;
-
-    }
-
+   }
     header a{
         display: block;
         padding: 0 10px ;
@@ -38,348 +29,263 @@
         color:black;
         text-transform: uppercase;
         text-decoration: none;
-    }
-
+   }
     header a:hover{
         text-decoration: underline;
-    }
-
-    /*DESKTOP MAIN*/
-
+   }
+   /*DESKTOP MAIN*/
     main{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:2;
         width:100%;
         margin: auto;
-   
-    }
-
+   }
     #portfolio_heading{
         margin-top: 2em;
         text-align: center;
-    }
-
+   }
     #portfolio_heading h5{
         font-size: 1.3em;
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 2em;
-    }
-
-    #portfolio_heading h1:before,
-    #portfolio_heading h1:after
-    {
+   }
+    #portfolio_heading h1:before, #portfolio_heading h1:after {
         content: '';
         border:2px solid rgb(29, 29, 29);
         display: block;
         max-width:1150px;
         margin: auto;
-    }
-
+   }
     #portfolio_heading h1{
         font-size: 7em;
         text-transform: uppercase;
         font-weight: 400;
-    }
-
-        /*DESKTOP PROJECT*/
-
-        #projects{
-
-            max-width:1100px;
-            margin: 2em auto;
-            display: grid;
-            grid-template-columns: repeat(3, 33.3%);
-            grid-template-rows: repeat(4, 22.5%);
-            height: 60vh;
-            grid-gap: 20px;
-        }
-
-        #projects > div{
-            width: 100%;
-
-        }
-
-        #mood{
-            grid-row-start: 1;
-            grid-row-end: 5;
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-            
-        }
-
-        #mood a,
-        #to-do a,
-        #travel a,
-        #food-order a,
-        #weather a
-        {
-            color:white;
-            text-transform: uppercase;
-            margin: 2em 1em;
-        }
-
-        #mood:hover,
-        #to-do:hover,
-        #travel:hover,
-        #food-order:hover,
-        #weather:hover
-        {
-            transition: 0.5s;
-            transform: scale(1.02);
-            text-decoration: underline;
-        }
-
-
-        #to-do{
- 
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
-            grid-row-start: 1;
-            grid-row-end: 3;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #travel{
-       
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
-            grid-row-start: 3;
-            grid-row-end: 5;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        
-        #food-order{
-           
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
-            grid-row-start: 1;
-            grid-row-end: 2;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #weather{
-          
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
-            grid-row-start: 2;
-            grid-row-end: 5;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-
-        /*ABOUT PAGE*/
-
-        #about-page{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            height: 70vh;
-            font-family: Montserrat, Helvetica, sans-serif;
-        }
-
-        #container{
-            background-image:url('./media/me.jpg');
-            background-repeat: no-repeat;
-            position: absolute;
-            background-size: cover;
-            width:33vw;
-            top:0;
-            left:5%;
-            height: 100vh;
-            cursor: pointer;
-            color:white;
-            line-height: 2;
-            transition: all 0.25s ease-out;
-
-        }
-
-        #container:hover{
-            background-image:url('./media/me-hover.jpg');
-            transition: all 0.2s ease-in;
-
-        }
-
-        #container p{
-            transition: all 0.2s ease-in;
-            font-size: 1.3em;
-           position: relative;
-           top:70%;
-           width:80%;
-           left:5%;
-  
-        }
-
-        #skills{
-         
-            width:800px;
-            margin-left: 10%;
-            align-self: center;
-            grid-column-start: 2;
-           
-        }
-
-        #skills h2{
-            text-align: left;
-            font-weight: 300;
-            font-size: 2.4em;
-            width:400px;
-            margin: 2em 0 2em 20px;
-            text-transform: uppercase;
-            border-bottom: 2px solid rgb(44, 40, 40);
-            padding-bottom: 5px;
-        }
-
-        #skills h4{
-            text-align: left;
-            font-weight: 400;
-            font-size: 1.4em;
-            text-transform: uppercase;
-            margin: 1em 0 1em 20px;
-
-        }
-
-        #skills div ul {
-            display: flex;
-
-        }
-        
-        #skills div ul img{
-            display: block;
-            margin: 1em 20px;
-            width: 80px;
-            height: 80px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-
-
-
-        #skills div ul img:hover{
-            transform: scale(1.1);
-            transition: 0.5s;
-        }
-
-        #skills div li{
-            text-transform: uppercase;
-            list-style-type: none;
-            text-align: center;
-        }
-
-        #skills a{
-            border:2px solid rgb(41, 38, 38);
-            margin-top:10%;
-            width:500px;
-            padding: 20px 0;
-            text-align: center;
-            display: block;
-            color:rgb(49, 44, 44);
-            text-decoration: none;
-            
-        }
-
-        #skills a:hover{
-            background-color:rgb(49, 44, 44);
-            color: white;
-        }
-
-        /*DESKTOP FOOTER*/
-
-
-
-        footer i{
-            font-size:36px;
-            display: block;
-            margin: 0.5em auto 0;
-            width:90%;
-            text-align: center;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        footer a{
-            color: black;
-        }
-
-        
-        footer i:hover{
-
-            transition: 1s;
-            transform: scale(1.2);
-        }
-        footer{
-
-            grid-column-start: 2;
-            grid-row-start:2;
-            max-width:60px;
-            flex-wrap: wrap;
-            max-height: 60vh;
-            align-self: center;
-            position: absolute;
-            top:45%;
-            right: 2%;
-        }
-
-        footer:before{
-            content: '';
-            width: 0;
-            height: 200px;
-            position: absolute;
-            bottom:100%;
-            margin: 1em auto;
-            left: 0;
-            right: 0;
-            border: 2px solid black;
-        }
-        footer:after
-        {
-            content: '';
-            width: 0;
-            height: 200px;
-            position: absolute;
-            top:100%;
-            margin: 1em auto;
-            left: 0;
-            right: 0;
-            border: 2px solid black;
-            
-    
-        }
-
-
-
+   }
+   /*DESKTOP PROJECT*/
+    #projects{
+        max-width:1100px;
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(4, 22.5%);
+        height: 60vh;
+        grid-gap: 20px;
+   }
+    #projects > div{
+        width: 100%;
+   }
+    #mood{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #mood a, #to-do a, #travel a, #food-order a, #weather a {
+        color:white;
+        text-transform: uppercase;
+        margin: 2em 1em;
+   }
+    #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
+        transition: 0.5s;
+        transform: scale(1.02);
+        text-decoration: underline;
+   }
+    #to-do{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #travel{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #food-order{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #weather{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+   /*DESKTOP ABOUT PAGE*/
+    #about-page{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 70vh;
+        font-family: Montserrat, Helvetica, sans-serif;
+   }
+    #container{
+        background-image:url('./media/me.jpg');
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: cover;
+        width:33vw;
+        top:0;
+        left:5%;
+        height: 100vh;
+        cursor: pointer;
+        color:white;
+        line-height: 2;
+        transition: all 0.25s ease-out;
+   }
+    #container:hover{
+        background-image:url('./media/me-hover.jpg');
+        transition: all 0.2s ease-in;
+   }
+    #container p{
+        transition: all 0.2s ease-in;
+        font-size: 1.3em;
+        position: relative;
+        top:70%;
+        width:80%;
+        left:5%;
+   }
+    #skills{
+        width:800px;
+        margin-left: 10%;
+        align-self: center;
+        grid-column-start: 2;
+   }
+    #skills h2{
+        text-align: left;
+        font-weight: 300;
+        font-size: 2.4em;
+        width:400px;
+        margin: 2em 0 2em 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid rgb(44, 40, 40);
+        padding-bottom: 5px;
+   }
+    #skills h4{
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        margin: 1em 0 1em 20px;
+   }
+    #skills div ul {
+        display: flex;
+   }
+    #skills div ul img{
+        display: block;
+        margin: 1em 20px;
+        width: 80px;
+        height: 80px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        transition: 0.5s;
+   }
+    #skills div ul img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+   }
+    #skills div li{
+        text-transform: uppercase;
+        list-style-type: none;
+        text-align: center;
+   }
+    #skills a{
+        border:2px solid rgb(41, 38, 38);
+        margin-top:10%;
+        width:500px;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+        color:rgb(49, 44, 44);
+        text-decoration: none;
+   }
+    #skills a:hover{
+        background-color:rgb(49, 44, 44);
+        color: white;
+   }
+   /*DESKTOP FOOTER*/
+    footer i{
+        font-size:36px;
+        display: block;
+        margin: 0.5em auto 0;
+        width:90%;
+        text-align: center;
+        cursor: pointer;
+        transition: 1s;
+   }
+    footer a{
+        color: black;
+   }
+    footer i:hover{
+        transition: 1s;
+        transform: scale(1.2);
+   }
+    footer{
+        grid-column-start: 2;
+        grid-row-start:2;
+        max-width:60px;
+        flex-wrap: wrap;
+        max-height: 60vh;
+        align-self: center;
+        position: absolute;
+        top:45%;
+        right: 2%;
+   }
+    footer:before{
+        content: '';
+        width: 0;
+        height: 200px;
+        position: absolute;
+        bottom:100%;
+        margin: 1em auto;
+        left: 0;
+        right: 0;
+        border: 2px solid black;
+   }
+    footer:after {
+        content: '';
+        width: 0;
+        height: 200px;
+        position: absolute;
+        top:100%;
+        margin: 1em auto;
+        left: 0;
+        right: 0;
+        border: 2px solid black;
+   }
 }
-
 /*TABLET*/
-
 @media screen and (min-width: 600px) and (max-width:1299px){
-
-
-    /*TABLET HEADER*/
-
+   /*TABLET HEADER*/
     header{
         display: flex;
         justify-content: flex-end;
@@ -389,9 +295,7 @@
         grid-column-end: 3;
         grid-row-start:1;
         grid-row-end:2;
-
-    }
-
+   }
     header a{
         display: block;
         padding: 0 10px ;
@@ -399,200 +303,226 @@
         color:black;
         text-transform: uppercase;
         text-decoration: none;
-    }
-
+   }
     header a:hover{
         text-decoration: underline;
-    }
-
-    /*TABLET MAIN*/
-
+   }
+   /*TABLET MAIN*/
     main{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:2;
         width:90%;
         margin: auto;
-   
-    }
-
+   }
     #portfolio_heading{
         margin-top: 2em;
         text-align: center;
-    }
-
+   }
     #portfolio_heading h5{
         font-size: 1.3em;
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 2em;
-    }
-
-    #portfolio_heading h1:before,
-    #portfolio_heading h1:after
-    {
+   }
+    #portfolio_heading h1:before, #portfolio_heading h1:after {
         content: '';
         border:2px solid rgb(29, 29, 29);
         display: block;
         max-width:90%;
         margin: auto;
-    }
-
+   }
     #portfolio_heading h1{
         font-size: 5em;
         text-transform: uppercase;
         font-weight: 400;
-    }
-
-        /*TABLET PROJECT*/
-
-        #projects{
-
-            max-width:90%;
-            margin: 2em auto;
-            display: grid;
-            grid-template-columns: repeat(3, 33.3%);
-            grid-template-rows: repeat(4, 22.5%);
-            height: 40vh;
-            grid-gap: 20px;
-        }
-
-        #projects > div{
-            width: 100%;
-
-        }
-
-        #mood{
-            grid-row-start: 1;
-            grid-row-end: 5;
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-            
-        }
-
-        #mood a,
-        #to-do a,
-        #travel a,
-        #food-order a,
-        #weather a
-        {
-            color:white;
-            text-transform: uppercase;
-            margin: 2em 1em;
-        }
-
-        #mood:hover,
-        #to-do:hover,
-        #travel:hover,
-        #food-order:hover,
-        #weather:hover
-        {
-            transition: 0.5s;
-            transform: scale(1.02);
-            text-decoration: underline;
-        }
-
-
-        #to-do{
- 
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
-            grid-row-start: 1;
-            grid-row-end: 3;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #travel{
-       
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
-            grid-row-start: 3;
-            grid-row-end: 5;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        
-        #food-order{
-           
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
-            grid-row-start: 1;
-            grid-row-end: 2;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #weather{
-          
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
-            grid-row-start: 2;
-            grid-row-end: 5;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        /*TABLET FOOTER*/
-
-        footer i{
-            font-size:48px;
-            display: block;
-            margin: 0.5em auto 0;
-            padding: 1em 0.3em;
-
-        }
-
-        footer a{
-            color: rgb(33, 31, 31);
-        }
-
-        footer{
-
-            margin-top: 4em;
-            display: flex;
-            align-self: center;
-            justify-content: center;
-
-        }
-
-
+   }
+   /*TABLET PROJECT*/
+    #projects{
+        max-width:90%;
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(4, 22.5%);
+        height: 40vh;
+        grid-gap: 20px;
+   }
+    #projects > div{
+        width: 100%;
+   }
+    #mood{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #mood a, #to-do a, #travel a, #food-order a, #weather a {
+        color:white;
+        text-transform: uppercase;
+        margin: 2em 1em;
+   }
+    #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
+        transition: 0.5s;
+        transform: scale(1.02);
+        text-decoration: underline;
+   }
+    #to-do{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #travel{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #food-order{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #weather{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+   /*TABLET ABOUT PAGE*/
+    #about-page{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        font-family: Montserrat, Helvetica, sans-serif;
+   }
+    #container{
+        width:100%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        cursor: pointer;
+        color:white;
+        line-height: 2;
+        transition: all 0.25s ease-out;
+   }
+    #container::before{
+        content:url("./media/me-phone.jpg");
+        display: block;
+        width:250px;
+        margin: auto;
+   }
+    #container p{
+        display: none;
+   }
+    #skills{
+        grid-row-start: 2;
+   }
+    #skills h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.4em;
+        width:400px;
+        margin: 2em auto;
+        text-transform: uppercase;
+        border-bottom: 2px solid rgb(44, 40, 40);
+        padding-bottom: 5px;
+   }
+    #skills h4{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        margin: 1em 0 1em 20px;
+   }
+    #skills div ul {
+        display: flex;
+        justify-content: center;
+   }
+    #skills div ul img{
+        display: block;
+        margin: 1em 20px;
+        width: 80px;
+        height: 80px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        transition: 0.5s;
+   }
+    #skills div ul img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+   }
+    #skills div li{
+        text-transform: uppercase;
+        list-style-type: none;
+        text-align: center;
+   }
+    #skills a{
+        border:2px solid rgb(41, 38, 38);
+        margin: auto;
+        margin-top:10%;
+        width:500px;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+        color:rgb(49, 44, 44);
+        text-decoration: none;
+   }
+    #skills a:hover{
+        background-color:rgb(49, 44, 44);
+        color: white;
+   }
+   /*TABLET FOOTER*/
+    footer i{
+        font-size:48px;
+        display: block;
+        margin: 0.5em auto 0;
+        padding: 1em 0.3em;
+   }
+    footer a{
+        color: rgb(33, 31, 31);
+   }
+    footer{
+        margin-top: 4em;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+   }
 }
-
-
 /*SMARTPHONE*/
-
 @media screen and (min-width: 320px) and (max-width:599px){
-
-
-
-    /*SMARTPHONE HEADER*/
-
+   /*SMARTPHONE HEADER*/
     header{
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 2em;
-    }
-
+   }
     header a{
         display: block;
         padding: 0 10px ;
@@ -600,171 +530,217 @@
         color:black;
         text-transform: uppercase;
         text-decoration: none;
-    }
-
-    /*SMARTPHONE MAIN*/
-
+   }
+   /*SMARTPHONE MAIN*/
     main{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:2;
         width:90%;
         margin: auto;
-   
-    }
-
+   }
     #portfolio_heading{
         margin-top: 2em;
         text-align: center;
-    }
-
+   }
     #portfolio_heading h5{
         font-size: 1.2em;
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 1em;
-    }
-
-    #portfolio_heading h1:before,
-    #portfolio_heading h1:after
-    {
+   }
+    #portfolio_heading h1:before, #portfolio_heading h1:after {
         content: '';
         border:2px solid rgb(29, 29, 29);
         display: block;
         max-width:90%;
         margin: auto;
-    }
-
+   }
     #portfolio_heading h1{
         font-size: 3em;
         text-transform: uppercase;
         font-weight: 400;
-    }
+   }
+   /*SMARTPHONE PROJECT*/
+    #projects{
+        max-width:100%;
+        display: flex;
+        margin: 2em auto;
+        overflow: scroll;
+        align-items: center;
+   }
+    #projects::-webkit-scrollbar{
+        display: none;
+   }
+    #projects > div{
+        height: 50vh;
+        min-width:85vw;
+        margin: 0 0.2em;
+   }
+    #mood{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+   }
+    #mood a, #to-do a, #travel a, #food-order a, #weather a {
+        color:white;
+        text-transform: uppercase;
+        margin: 2em 1em;
+   }
+    #mood:hover, #to-do:hover, #travel:hover, #food-order:hover, #weather:hover {
+        transition: 0.5s;
+        transform: scale(1.02);
+        text-decoration: underline;
+   }
+    #to-do{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #travel{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #food-order{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+    #weather{
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+        display: flex;
+        align-items: flex-end;
+   }
+   /*SMARTPHONE ABOUT PAGE*/
+    #about-page{
+        display: grid;
+        width:99%;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        font-family: Montserrat, Helvetica, sans-serif;
+   }
+    #container{
+        width:100%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        cursor: pointer;
+        color:white;
+        line-height: 2;
+        transition: all 0.25s ease-out;
+   }
+    #container::before{
+        content:url("./media/me-phone.jpg");
+        display: block;
+        width:270px;
+        margin: auto;
+   }
+    #container p{
+        display: none;
+   }
+    #skills{
+        grid-row-start: 2;
+        width:100%;
+      
+   }
 
-        /*SMARTPHONE PROJECT*/
-
-        #projects{
-
-            max-width:100%;
-            display: flex;
-            margin: 2em auto;
-            overflow: scroll;
-            align-items: center;
-        }
-
-        #projects::-webkit-scrollbar{
-            display: none;
-        }
-
-        #projects > div{
-            height: 50vh;
-            min-width:85vw;
-            margin: 0 0.2em;
-
-        }
-
-        #mood{
-        
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            align-items: flex-end;
-            
-        }
-
-        #mood a,
-        #to-do a,
-        #travel a,
-        #food-order a,
-        #weather a
-        {
-            color:white;
-            text-transform: uppercase;
-            margin: 2em 1em;
-        }
-
-        #mood:hover,
-        #to-do:hover,
-        #travel:hover,
-        #food-order:hover,
-        #weather:hover
-        {
-            transition: 0.5s;
-            transform: scale(1.02);
-            text-decoration: underline;
-        }
-
-
-        #to-do{
- 
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #travel{
-       
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        
-        #food-order{
-           
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        #weather{
-          
-            background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        /*SMARTPHONE FOOTER*/
-
-        footer i{
-            font-size:42px;
-            display: block;
-            padding: 1em 0.4em;
-
-        }
-
-        footer a{
-            color: rgb(33, 31, 31);
-        }
-
-        main:after{
-            content: 'Swipe Right to see more works';
-            text-align: center;
-            width:100%;
-            display: block;
-            margin: auto;
-            text-transform: uppercase;
-        }
-        footer{
-
-            display: flex;
-            align-self: center;
-            justify-content: center;
-
-        }
+    #skills h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.5em;
+        width:80%;
+        margin: 2em auto;
+        text-transform: uppercase;
+        border-bottom: 2px solid rgb(44, 40, 40);
+        padding-bottom: 5px;
+   }
+    #skills h4{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        margin: 1em 0 1em 20px;
+   }
 
 
+    #skills div ul {
+        display: flex;
+        justify-content: center;
+        overflow-x: scroll;
+        width:100%;
+   }
+
+   #skills div ul::-webkit-scrollbar {
+    display: none;
+}
+
+    #skills div ul img{
+        display: block;
+        margin: 1em 10px;
+        width: 80px;
+        height: 80px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        transition: 0.5s;
+   }
+    #skills div ul img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+   }
+    #skills div li{
+        text-transform: uppercase;
+        list-style-type: none;
+        text-align: center;
+   }
+    #skills a{
+        border:2px solid rgb(41, 38, 38);
+        margin: auto;
+        margin-top:10%;
+        width:90%;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+        color:rgb(49, 44, 44);
+        text-decoration: none;
+   }
+    #skills a:hover{
+        background-color:rgb(49, 44, 44);
+        color: white;
+   }
+   /*SMARTPHONE FOOTER*/
+    footer i{
+        font-size:42px;
+        display: block;
+        padding: 1em 0.4em;
+   }
+    footer a{
+        color: rgb(33, 31, 31);
+   }
+   #swipe{
+      
+        text-align: center;
+        width:100%;
+        display: block;
+        margin: auto;
+        text-transform: uppercase;
+   }
+    footer{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+   }
 }
