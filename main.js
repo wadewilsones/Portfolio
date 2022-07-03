@@ -67,20 +67,36 @@ function displayProjectInfo () {
     ]
 
     let newArray = Array.from(projects);
-    console.log(newArray)
 
     projects.forEach((project) => {
         project.addEventListener('mouseover', function showProjectInfo(event) {
-            event.target.innerHTML = "<p style = 'color:white;text-decoration:none'>" + projectInfo[newArray.indexOf(project)].descr + "</p>"
+            event.target.innerHTML = "<p>" + projectInfo[newArray.indexOf(project)].descr + "</p>"
         });
 
         project.addEventListener('mouseleave', function hideProjectInfo(e) {
             e.target.innerHTML = '';
-            e.target.innerHTML +=  "<a href='" + projectInfo[newArray.indexOf(project)].link + "'>" + projectInfo[newArray.indexOf(project)].name + "</a>";
+            e.target.innerHTML +=  "<a href='" + projectInfo[0].link + "'>" + projectInfo[0].name + "</a>";
         });
 
     
     })
 
 
+}
+
+
+// Display Hamburger Button
+function showMenu() {
+    const ul = document.querySelector('#header_links');
+
+    if(ul.style.display === 'block'){
+        ul.style.display = 'none';
+    }
+    else{
+        ul.style.display = 'block';
+    }
+}
+
+window.onload = {
+    
 }

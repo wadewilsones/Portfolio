@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <title>V-Portfolio</title>
+    <title>Contact Me</title>
 </head>
 <body>
-    <header>
+    <header id = 'contact-header'>
         <nav>
             <div class='menu-button' onClick = "showMenu()">
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-h" aria-hidden="true" id ='contact-header-icons'></i>
             </div>
             <ul id = 'header_links'>
                 <li><a href="./home.html">Home</a></li>
@@ -27,31 +27,27 @@
         </nav>
 
     </header>
-    <main>
-        <section id = "portfolio_heading">
-            <h5>Ulada Haranina</h5>
-            <h1>portfolio</h1>
+    <main id = 'contact-page'>
+        <section>
+            <h2>Feel free to reach me out</h2>
+            <form>
+                <input type = "text" placeholder="Your name..." name = 'name'>
+                <input type = "email" placeholder="Your email..." name = 'email'>
+                <input type = "text" placeholder="Message..." name = 'message'>
+                <input type = "submit" value = "Send Message">
+            </form>
         </section>
-        <section id = "projects">
-            <div id = 'mood' onClick = "window.location='https://mood-tracker-application.herokuapp.com/login'" class = 'projects-info'>
-                <a href="https://mood-tracker-application.herokuapp.com/login" >Mood Application</a>
-            </div>
-            <div id = 'to-do' onClick = "window.location='https://wadewilsones.github.io/toDo-app/'" class = 'projects-info'>
-                <a href="https://wadewilsones.github.io/toDo-app/">To Do Application</a>
-            </div>
-            <div id = 'food-order' onClick = "window.location='https://wadewilsones.github.io/restaurant-app/'" class = 'projects-info'>
-                <a href="https://wadewilsones.github.io/restaurant-app/">Restuarant App</a>
-            </div>
-            <div id = 'travel' class = 'projects-info'>
-                <a>Travel Application</a>
-            </div>
-            <div id = 'weather' class = 'projects-info'>
-                <a>Weather Application</a>
-            </div>
+        <section id ='orSection'>
+            <h1>OR</h1>
         </section>
-        <p id = 'swipe'>Swipe Right to see more works</p>
+        <section>
+            <ul>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href ="mailto:uladaharanina@gmail.com">uladaharanina@gmail.com</a></li>
+                <li><i class="fa fa-mobile" aria-hidden="true"></i></i><a href ="tel:1-336-123-4567">+ 1 (336) 123-4567</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
+    <footer id="footer-contact">
         <a href="https://github.com/wadewilsones"><i class="fa fa-github" aria-hidden="true" id="gitHub"></i></a>
         <a href="https://www.linkedin.com/in/uladaharanina/"><i class="fa fa-linkedin-square" aria-hidden="true"  id="linkedin"></i></a>
     </footer>
