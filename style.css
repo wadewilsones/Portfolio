@@ -77,43 +77,7 @@
         font-weight: 400;
    }
 
-   /*DESKTOP HOME*/
-    #home_header{
-        position: relative;
-        z-index: 200;
-    }
-
-   #home_page{
-    background-image: url('./media/home_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: -30em;
-    background-position-y: -10em;
-    position: absolute;
-    height:100vh;
-    z-index: 0;
-   }
-
-   #home_page a {
-    display: block;
-    position: relative;
-    top:50%;
-    left: 60%;
-    width:340px;
-    padding: 20px 0;
-    cursor: pointer;
-    background-color: #FFFFFF;
-    color:black;
-    text-align: center;
-    text-decoration: none;
-    border:5px solid rgb(29, 29, 29);
-   }
-   #home_page a:hover{
-    background-color: rgb(29, 29, 29);
-   color:white
-   }
-
-
+ 
 
    /*DESKTOP PROJECT*/
     #projects{
@@ -223,6 +187,24 @@
         height: 70vh;
         font-family: Montserrat, Helvetica, sans-serif;
    }
+
+   #text-about{
+    display: none;
+    text-align: justify;
+    transition: all 0.2s ease-in;
+    font-size: 1.3em;
+    position: relative;
+    top:35%;
+    width:80%;
+    left:10%;
+}
+
+#container:hover  #text-about{
+    display: block;
+   }
+
+
+
     #container{
         background-image:url('./media/me.jpg');
         background-repeat: no-repeat;
@@ -523,35 +505,6 @@
    }
     header a:hover{
         text-decoration: underline;
-   }
-
-   #home_page{
-    background-image: url('./media/home_background.png');
-    background-size: cover;
-    background-position-y: -6em;
-    background-repeat: no-repeat;
-    height:100vh;
-    width:100%;
-   }
-   #home_page a {
-    position: absolute;
-    display: block;
-    margin: 2em auto;
-    left: 0;
-    top:40%;
-    right: 0;
-    width:340px;
-    padding: 20px 0;
-    cursor: pointer;
-    background-color: black;
-    color:white;
-    text-align: center;
-    text-decoration: none;
-    border:2px solid rgb(29, 29, 29);
-   }
-   #home_page a:hover{
-    background-color:white;
-   color: rgb(29, 29, 29);
    }
 
    /*TABLET MAIN*/
@@ -979,37 +932,6 @@
     line-height: 3;
    }
 
-
-   #home_page{
-    z-index: 2;
-    background-image: url('./media/home_background.png');
-    background-size: cover;
-    background-position-y: 2em;
-    background-position-x:-5em;
-    background-repeat: no-repeat;
-    height:100vh;
-    width:100%;
-   }
-
-
-   #home_page a {
-    display: block;
-    width:70%;
-    max-width: 300px;
-    margin: 2em  auto;
-    padding: 20px 0;
-    cursor: pointer;
-    background-color: #FFFFFF;
-    color:black;
-    text-align: center;
-    text-decoration: none;
-    border:2px solid rgb(29, 29, 29);
-   }
-
-   #home_page a:hover{
-    background-color: rgb(29, 29, 29);
-   color:white
-   }
 
    /*SMARTPHONE MAIN*/
     main{
