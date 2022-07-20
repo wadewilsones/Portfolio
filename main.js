@@ -1,27 +1,5 @@
-if(window.location == 'file:///D:/Wake%20Tech/SUM22/WEB210/les7/about.html'){
-    displayAboutme();
-}
-
-else{
+if(window.location == 'file:///D:/dev/portfolio/index.html'){
     displayProjectInfo();
-}
-
-function displayAboutme(){
-
-let profile = document.querySelector('#profile-pic');
-let container = document.querySelector('#container');
-
-function displayData (){
-    container.innerHTML = "<p>"+text+"</p>";
-}
-
-function displayPic (){
-    container.innerHTML = '';
-}
-
-container.addEventListener('mouseover', displayData);
-container.addEventListener('mouseleave', displayPic);
-
 }
 
 
@@ -34,8 +12,8 @@ function displayProjectInfo () {
         {
             id:'mood',
             name:'Mood App',
-            descr:'This web application was made with Node.JS, Express, React.js, and PostgreSQL. REST API was applied for back and front-end communication. The app has implemented authentication and authorization.'
-
+            descr:'This web application was made with Node.JS, Express, React.js, and PostgreSQL. REST API was applied for back and front-end communication. The app has implemented authentication and authorization.',
+            link:'https://mood-tracker-application.herokuapp.com/login'
         },
         {
             id:'to-do',
@@ -54,13 +32,13 @@ function displayProjectInfo () {
             id:'travel',
             name:'Travel App',
             descr:'This web application was made with Vanilla JavaScript and third-party API. Users can add the trip destination and see the weather for the next 10 days in that location. Webpack bundle was used.',
-            link:'https://mood-tracker-application.herokuapp.com/login'
+            link:'https://github.com/wadewilsones/Travel-app'
         },
         {
-            id:'weather',
-            name:'Weather App',
-            descr:'This is one of my first created web apps, using JavaScript and Weather API, users can get the weather for their location.',
-            link:'https://mood-tracker-application.herokuapp.com/login'
+            id:'store',
+            name:'Bicycle Store Website',
+            descr:'Website for a bicycle store. Made  by using HTML5, CSS3',
+            link:'https://wadewilsones.github.io/ViciousCyclesProject/'
         },
     ]
 
@@ -73,7 +51,7 @@ function displayProjectInfo () {
 
         project.addEventListener('mouseleave', function hideProjectInfo(e) {
             e.target.innerHTML = '';
-            e.target.innerHTML +=  "<a href='" + projectInfo[0].link + "'>" + projectInfo[0].name + "</a>";
+            e.target.innerHTML +=  "<a href='" + projectInfo[newArray.indexOf(project)].link + "'>" + projectInfo[newArray.indexOf(project)].name + "</a>";
         });
 
     

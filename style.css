@@ -165,7 +165,7 @@
         transition: 0.5s;
    }
     #weather{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/cycles.jpg');
         grid-row-start: 2;
         grid-row-end: 5;
         background-position: center;
@@ -605,7 +605,7 @@
         align-items: flex-end;
    }
     #weather{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/cycles.jpg');
         grid-row-start: 2;
         grid-row-end: 5;
         background-position: center;
@@ -1029,7 +1029,7 @@
         align-items: flex-end;
    }
     #weather{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/weather.jpg');
+        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/cycles.jpg');;
         background-position: center;
         background-size: cover;
         transition: 1s;
