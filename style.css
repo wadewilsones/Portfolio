@@ -93,17 +93,6 @@
         width: 100%;
    }
 
-    #mood{
-        grid-row-start: 1;
-        grid-row-end: 5;
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/moodApp.jpg');
-        background-position: center;
-        background-size: cover;
-        cursor: pointer;
-        transition: 1s;
-        display: flex;
-        align-items: flex-end;
-   }
     #mood a, #to-do a, #travel a, #food-order a, #weather a {
         color:white;
         text-transform: uppercase;
@@ -128,8 +117,39 @@
         line-height: 2;
    }
 
+   #mood{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.708)), url('./media/moodApp.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: flex-end;
+}
+
+#mood:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url('./media/moodApp.jpg');
+}
+#to-do:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url('./media/to-do.jpg');
+}
+#travel:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url('./media/travel.jpg');
+}
+#food-order:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url('./media/foodOrder.jpg');
+
+}
+#weather:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url('./media/cycles.jpg');;
+    
+}
+
+
     #to-do{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/to-do.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.025), rgba(0, 0, 0, 0.708)), url('./media/to-do.jpg');
         grid-row-start: 1;
         grid-row-end: 3;
         background-position: center;
@@ -140,8 +160,10 @@
         align-items: flex-end;
         transition: 0.5s;
    }
+
+
     #travel{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.085), rgba(0, 0, 0, 0.708)), url('./media/travel.jpg');
         grid-row-start: 3;
         grid-row-end: 5;
         background-position: center;
@@ -153,7 +175,7 @@
         transition: 0.5s;
    }
     #food-order{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/foodOrder.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.708)), url('./media/foodOrder.jpg');
         grid-row-start: 1;
         grid-row-end: 2;
         background-position: center;
@@ -165,7 +187,7 @@
         transition: 0.5s;
    }
     #weather{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/cycles.jpg');
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.368)), url('./media/cycles.jpg');
         grid-row-start: 2;
         grid-row-end: 5;
         background-position: center;
@@ -1013,7 +1035,7 @@
         align-items: flex-end;
    }
     #travel{
-        background-image: linear-gradient(rgba(37, 34, 34, 0.5), rgba(28, 17, 17, 0.5)), url('./media/travel.jpg');
+        background-image: linear-gradient(rgba(37, 34, 34, 0.879), rgba(28, 17, 17, 0.742)), url('./media/travel.jpg');
         background-position: center;
         background-size: cover;
         transition: 1s;
