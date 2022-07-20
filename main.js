@@ -1,4 +1,4 @@
-if(window.location == 'file:///D:/dev/portfolio/index.html'){
+if(window.location == 'https://wadewilsones.github.io/Portfolio/index.html'){
     displayProjectInfo();
 }
 
